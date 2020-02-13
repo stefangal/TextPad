@@ -11,12 +11,15 @@ class TextPad:
     def __init__(self, master):
         self.master = master
         self.master.wm_title('TextPad')
-        self.master.iconbitmap('img/TextEditorIcon.ico')
         self.master.geometry(f"900x900+250+250")
         self.master.minsize(900, 900)
         #self.master.bind('<Escape>', lambda e: master.destroy()) # debug quick exit
         self.file_name = ""
         self.orig_openfile = ""
+        if "nt" == os.name:
+            self.master.iconbitmap('img/TextEditorIcon.ico')
+        else:
+            self.master.iconbitmap('')
 
 # MENUBAR
         self.menubar = Menu(self.master)

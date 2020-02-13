@@ -7,6 +7,5 @@ Feel free to extend it and play with it.
 ***
 
 ![GitHub Logo](img/screenshot.png)
-<table align="center"><tr><td align="left" width="9999">
 
 ver. 1.00
